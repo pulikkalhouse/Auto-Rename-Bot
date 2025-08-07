@@ -3,20 +3,20 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "20340960")
+    API_HASH  = os.environ.get("API_HASH", "731d6413f609e18766e56908534d4ae2")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8422803459:AAGzMdUDakoyND4loyMqgEB1wwuIpbkEPI8") 
 
     # database config
-    DB_NAME = os.environ.get("DB_NAME","madflixbotz")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","Cluster0")     
+    DB_URL  = os.environ.get("DB_URL","ongodb+srv://sukunaaaabot:<sukunaaaabot1>@cluster0.nybzyb3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/4b306f4b15c23a8f22e58.jpg")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    START_PIC   = os.environ.get("START_PIC", "https://envs.sh/Q8s.jpg?=ilovSTARLEY")
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '597083078').split()]
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "-4828001551") 
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002794290081"))
     
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
@@ -35,7 +35,7 @@ class Txt(object):
     
 ➻ Use /tutorial Command To Know How To Use Me.
     
-<b>Bot Is Made By @Madflix_Bots</b>"""
+<b></b>"""
     
     FILE_NAME_TXT = """<b><u>SETUP AUTO RENAME FORMAT</u></b>
 
@@ -44,7 +44,7 @@ Use These Keywords To Setup Custom File Name
 ✓ episode :- To Replace Episode Number
 ✓ quality :- To Replace Video Resolution
 
-<b>➻ Example :</b> <code> /autorename Naruto Shippuden S02 - EPepisode - quality  [Dual Audio] - @Madflix_Bots </code>
+<b>➻ Example :</b> <code> /autorename Naruto Shippuden S02 - EPepisode - quality  [Dual Audio] - @cinemaviibesss </code>
 
 <b>➻ Your Current Auto Rename Format :</b> <code>{format_template}</code> """
     
